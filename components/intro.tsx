@@ -1,11 +1,12 @@
 "use client";
 
 import Image from 'next/image';
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { BsLinkedin } from 'react-icons/bs';
 import { FaGithubSquare } from 'react-icons/fa';
 import { useSectionInView } from '@/lib/hooks';
+
 
 
 export default function Intro() {
@@ -44,7 +45,7 @@ export default function Intro() {
         initial={{opacity:0, y: 100}}
         animate={{opacity:1, y: 0}}
         >
-            Hey, I'm <strong>Chris</strong>. I'm a student at <strong>Harvard College</strong> studying <strong>Statistics</strong> and <strong>Computer Science</strong>. I'm passionate about leveraging <strong>machine learning</strong>, <strong>software engineering</strong>, and <strong>data science</strong> for social good. 
+            Hello, I'm <strong>Chris</strong>. I'm a student at <strong>Harvard College</strong> studying <strong>Statistics</strong> and <strong>Computer Science</strong>. I'm passionate about leveraging <strong>machine learning</strong>, <strong>software engineering</strong>, and <strong>data science</strong> for social good. 
 
         </motion.h1>
 
