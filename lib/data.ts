@@ -1,6 +1,6 @@
 import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
-import { FaReact } from "react-icons/fa";
+import { FaReact, FaLaptopCode, FaChartLine, FaChalkboardTeacher, FaDatabase, FaLightbulb } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
 import corpcommentImg from "@/public/corpcomment.png";
 import skysoarer from "@/public/SkySoarer.png";
@@ -20,7 +20,7 @@ export const links = [
     hash: "#projects",
   },
   {
-    name: "Experience",
+    name: "Experiences",
     hash: "#experience",
   },
   {
@@ -31,28 +31,49 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "Graduated bootcamp",
-    location: "Miami, FL",
+    title: "CS50 Summer Fellow",
+    employer: "Harvard John A. Paulson School of Engineering and Applied Sciences",
+    location: "Cambridge, MA",
     description:
-      "I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
-    icon: React.createElement(LuGraduationCap),
-    date: "2019",
+      "Design and implement new features for the CS50 course to aid student learning and update curriculum materials.",
+    icon: React.createElement(FaLightbulb),
+    date: "June - August 2024",
   },
   {
-    title: "Front-End Developer",
-    location: "Orlando, FL",
+    title: "Software Engineer",
+    employer: "Harvard Tech for Social Good",
+    location: "Cambridge, MA",
     description:
-      "I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.",
-    icon: React.createElement(CgWorkAlt),
-    date: "2019 - 2021",
+      "Contribute to developing innovative solutions that address critical societal issues through technology. Leverage technologies such as Next.js/React and Node.js to build projects that improve financial literacy and facilitate impactful charitable giving.",
+    icon: React.createElement(FaLaptopCode),
+    date: "February 2024 - present",
   },
   {
-    title: "Full-Stack Developer",
-    location: "Houston, TX",
+    title: "Computational Research Assistant",
+    employer: "Harvard University Department of Economics",
+    location: "Cambridge, MA",
     description:
-      "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
-    icon: React.createElement(FaReact),
-    date: "2021 - present",
+      "Support advanced economic research in the Syrian Civil War by collecting, cleaning, and analyzing large datasets to uncover insights on the conflict's impact on civilians. I am currently training a BERT model to classify Arabic text data on how civilians have died in the conflict.",
+    icon: React.createElement(FaChartLine),
+    date: "January 2024 - present",
+  },
+  {
+    title: "Course Assistant for CS50",
+    employer: "Harvard John A. Paulson School of Engineering and Applied Sciences",
+    location: "Cambridge, MA",
+    description:
+      "Conducted weekly office hours, graded assignments, and assisted students in understanding course material. Earned an overall Excellent rating by students in the end-of-semester course evaluations.",
+    icon: React.createElement(FaChalkboardTeacher),
+    date: "August - December 2023",
+  },
+  {
+    title: "Data Science Intern",
+    employer: "Instituto Milenio Fundamentos de los Datos",
+    location: "Santiago, Chile",
+    description:
+      "Collaborated with a team of professors and graduate students on an agent-based modeling project aimed at uncovering patterns related to narcotraffic and organized crime within Chile. Developed a Python script capable of processing extensive CSV files containing crime data and visualizing the results with a dynamic geographic heat map.",
+    icon: React.createElement(FaDatabase),
+    date: "June - July 2023",
   },
 ] as const;
 

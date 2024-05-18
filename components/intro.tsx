@@ -55,11 +55,11 @@ export default function Intro() {
                 delay:0.1,
             }}
         >
-            <a className="bg-white p-4 hover:text-gray-950 text-gray-700 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer border border-black/10"
+            <a className="bg-white p-4 hover:text-gray-950 text-gray-700 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer border border-black/10 dark:bg-white/10 dark:text-white/60"
             href="https://linkedin.com/in/cpez" target="_blank">
                 <BsLinkedin />
             </a>
-            <a className="bg-white p-4 text-gray-700 flex items-center text-[1.35rem] gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer border border-black/10"
+            <a className="bg-white p-4 text-gray-700 flex items-center text-[1.35rem] gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer border border-black/10 dark:bg-white/10 dark:text-white/60"
             href="https://github.com/cpez04" target="_blank">
                 <FaGithubSquare />
             </a>
