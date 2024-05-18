@@ -1,8 +1,5 @@
 import React from "react";
-import { CgWorkAlt } from "react-icons/cg";
-import { FaReact, FaLaptopCode, FaChartLine, FaChalkboardTeacher, FaDatabase, FaLightbulb } from "react-icons/fa";
-import { LuGraduationCap } from "react-icons/lu";
-import corpcommentImg from "@/public/corpcomment.png";
+import { FaLaptopCode, FaChartLine, FaChalkboardTeacher, FaDatabase, FaLightbulb } from "react-icons/fa";
 import skysoarer from "@/public/SkySoarer.png";
 import cointribute from "@/public/cointribute.png";
 
@@ -92,4 +89,60 @@ export const projectsData = [
     tags: ["Python", "Flask", "HTML", "CSS", "JavaScript"],
     imageUrl: skysoarer,
   },
+] as const;
+
+export const greetings = [
+  "Hello",       // English
+  "Hola",        // Spanish
+  "Bonjour",     // French
+  "Hallo",       // German
+  "Ciao",        // Italian
+  "こんにちは",    // Japanese (Konnichiwa)
+  "안녕하세요",     // Korean (Annyeonghaseyo)
+  "你好",         // Chinese (Nǐ hǎo)
+  "Привет",      // Russian (Privet)
+  "مرحبا",       // Arabic (Marhaban)
+  "Hej",         // Swedish
+  "Hei",         // Norwegian
+  "Hallo",       // Dutch
+  "Ahoj",        // Czech
+  "Olá",         // Portuguese
+  "Selam",       // Turkish
+  "Szia",        // Hungarian
+  "สวัสดี",      // Thai (Sawasdee)
+  "Hallo",       // Afrikaans
+  "Kamusta",     // Filipino
+  "שלום",        // Hebrew (Shalom)
+  "नमस्ते",       // Hindi (Namaste)
+  "வணக்கம்",     // Tamil (Vanakkam)
+  "Γεια σας",    // Greek (Yia sas)
+  "Բարեւ",       // Armenian (Barev)
+  "გამარჯობა",   // Georgian (Gamarjoba)
+  "Salve",       // Latin
+  "Здраво",      // Serbian (Zdravo)
+  "สวัสดีครับ",   // Thai (Sawasdee krub)
+  "Здравей",     // Bulgarian (Zdravei)
+  "नमस्कार",      // Marathi (Namaskar)
+  "हॅलो",         // Marathi (Hello)
+  "ಹಲೋ",         // Kannada (Halo)
+  "હેલો",         // Gujarati (Hello)
+  "안녕",          // Korean (Annyeong)
+  "Cześć",       // Polish
+  "سلام",        // Persian (Salam)
+  "Merhaba",     // Turkish
+  "Sveiki",      // Latvian
+  "Tere",        // Estonian
+  "Xin chào",    // Vietnamese
+  "Hallo",       // Indonesian
+  "Bula",        // Fijian
+  "Aloha",       // Hawaiian
+  "Sawubona",    // Zulu
+  "Molo",        // Xhosa
+  "Salam",       // Azerbaijani
+  "Kaixo",       // Basque
+  "नमस्ते",       // Nepali (Namaste)
+  "Dia duit",    // Irish (Gaelic)
+  "Dobrý den",   // Czech
+  "สวัสดีค่ะ",     // Thai (Sawasdee ka)
+  "سلام",        // Urdu (Salam)
 ] as const;

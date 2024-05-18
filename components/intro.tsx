@@ -2,16 +2,24 @@
 
 import Image from 'next/image';
 import React, { useState, useEffect } from 'react';
-import { motion } from 'framer-motion';
+import { motion, AnimatePresence } from 'framer-motion';
 import { BsLinkedin } from 'react-icons/bs';
 import { FaGithubSquare } from 'react-icons/fa';
 import { useSectionInView } from '@/lib/hooks';
-
+import { greetings } from '@/lib/data';
 
 
 export default function Intro() {
 
   const { ref } = useSectionInView("Home", 0.5);
+  const [greetingIndex, setGreetingIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setGreetingIndex((prevIndex) => (prevIndex + 1) % greetings.length);
+    }, 4000); // Change greeting every 2 seconds
+    return () => clearInterval(interval);
+  }, []);
 
   return (
     <section ref={ref} id="home" className="mb-28 max-w-[50rem] text-center sm:mb-0 scroll-mt-[100rem]">
@@ -41,13 +49,27 @@ export default function Intro() {
 
         </div>
 
-        <motion.h1 className="mb-10 mt-4 px-4 text-2xl font-normal !leading-[1.5] sm:text-4xl "
-        initial={{opacity:0, y: 100}}
-        animate={{opacity:1, y: 0}}
-        >
-            Hello, I'm <strong>Chris</strong>. I'm a student at <strong>Harvard College</strong> studying <strong>Statistics</strong> and <strong>Computer Science</strong>. I'm passionate about leveraging <strong>machine learning</strong>, <strong>software engineering</strong>, and <strong>data science</strong> for social good. 
-
-        </motion.h1>
+        <motion.div className="mb-10 mt-4 px-4 text-2xl font-normal !leading-[1.5] sm:text-4xl"
+        initial={{ opacity: 0, y: 100 }}
+        animate={{ opacity: 1, y: 0 }}
+      >
+        <div className="flex justify-center">
+          <AnimatePresence mode="wait">
+            <motion.span
+              key={greetings[greetingIndex]}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              transition={{ duration: 0.5 }}
+              className="inline-block"
+            >
+              {greetings[greetingIndex]}
+            </motion.span>
+          </AnimatePresence>
+          <span className="inline-block">, I'm <strong>Chris</strong>.</span>
+        </div>
+        <div>I'm a student at <strong>Harvard College</strong> studying <strong>Statistics</strong> and <strong>Computer Science</strong>. I'm passionate about leveraging <strong>machine learning</strong>, <strong>software engineering</strong>, and <strong>data science</strong> for social good.</div>
+      </motion.div>
 
         <motion.div className="flex flex-col sm:flex-row items-center justify-center gap-2 px-4 text-lg font-medium "
             initial={{opacity:0, y: 100}}

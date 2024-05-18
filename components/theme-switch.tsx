@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import { BsSun, BsMoon } from 'react-icons/bs'
 import { useTheme } from '@/context/theme-context'
 
