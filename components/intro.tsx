@@ -71,12 +71,13 @@ export default function Intro() {
         <div>I'm a student at <strong>Harvard College</strong> studying <strong>Statistics</strong> and <strong>Computer Science</strong>. I'm passionate about leveraging <strong>machine learning</strong>, <strong>software engineering</strong>, and <strong>data science</strong> for social good.</div>
       </motion.div>
 
-        <motion.div className="flex flex-col sm:flex-row items-center justify-center gap-2 px-4 text-lg font-medium "
+        <motion.div className="flex items-center justify-center gap-2 px-4 text-lg font-medium"
             initial={{opacity:0, y: 100}}
             animate={{opacity:1, y: 0}}
             transition={{
                 delay:0.1,
             }}
+            style={{ flexWrap: 'nowrap' }}
         >
             <a className="bg-white p-4 hover:text-gray-950 text-gray-700 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer border border-black/10 dark:bg-white/10 dark:text-white/60"
             href="https://linkedin.com/in/cpez" target="_blank">
