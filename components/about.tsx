@@ -18,7 +18,7 @@ export default function About() {
     >
         <SectionHeading>About Me</SectionHeading>
         <p className="mb-3 "> 
-          I am a rising junior at Harvard College, majoring in statistics and computer science. My coursework has provided me with a strong foundation in machine learning, data structures, algorithms, probability, and statistical inference. This academic background is complemented by my involvement in tech-driven extracurriculars such as Harvard Tech for Social Good (T4SG), where I engage in impactful projects aimed at societal benefit. </p>
+          I am a rising junior at Harvard College majoring in statistics and computer science. My coursework has provided me with a strong foundation in machine learning, data structures, algorithms, probability, and statistical inference. This academic background is complemented by my involvement in tech-driven extracurriculars such as Harvard Tech for Social Good (T4SG), where I engage in impactful projects aimed at societal benefit. </p>
           
         <p className="mb-3">  In addition to my coursework, I work part-time as a research assistant for PhD candidate Emily Silcock, where I am involved in training a large language model to classify texts related to the Syrian Civil War. I am also very passionate about education. This upcoming semester will mark my second year as a course assistant for CS50, Harvard’s introductory computer science course, where I support students in mastering foundational programming concepts. </p>
          

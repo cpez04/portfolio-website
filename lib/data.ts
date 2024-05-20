@@ -2,6 +2,7 @@ import React from "react";
 import { FaLaptopCode, FaChartLine, FaChalkboardTeacher, FaDatabase, FaLightbulb } from "react-icons/fa";
 import skysoarer from "@/public/SkySoarer.png";
 import cointribute from "@/public/cointribute.png";
+import kkt from "@/public/kkt.png";
 
 export const links = [
   {
@@ -81,6 +82,13 @@ export const projectsData = [
       "A Harvard T4SG web application that promotes charitable donations and financial literacy amongst young adults. It allows users to donate to various charities, track their donations, and complete finance modules personalized via AI.",
     tags: ["Next.js", "React", "Tailwind", "Supabase", "TypeScript"],
     imageUrl: cointribute,
+  },
+  {
+    title: "Multi-Objective and Multi-Constraint Optimization",
+    description:
+      "A paper that proves the Envelope Theorems and the Karush-Kuhn-Tucker Conditions, providing a lens to analyze their applicability to three fictional business models and to gain further theoretical and geometric mathematical intuition.",
+    tags: ["Multivariable Calculus", "Linear Algebra", "Economics"],
+    imageUrl: kkt,
   },
   {
     title: "SkySoarer",
