@@ -33,18 +33,9 @@ export const experiencesData = [
     employer: "Harvard John A. Paulson School of Engineering and Applied Sciences",
     location: "Cambridge, MA",
     description:
-      "Design and implement new features for the CS50 course to aid student learning and update curriculum materials.",
+      "Design and implement new AI features for the CS50 course to aid student learning and update curriculum materials.",
     icon: React.createElement(FaLightbulb),
-    date: "June - August 2024",
-  },
-  {
-    title: "Software Engineer",
-    employer: "Harvard Tech for Social Good",
-    location: "Cambridge, MA",
-    description:
-      "Contribute to developing innovative solutions that address critical societal issues through technology. Leverage technologies such as Next.js/React and Node.js to build projects that improve financial literacy and facilitate impactful charitable giving.",
-    icon: React.createElement(FaLaptopCode),
-    date: "February 2024 - present",
+    date: "June 2024 - present",
   },
   {
     title: "Computational Research Assistant",
@@ -54,6 +45,15 @@ export const experiencesData = [
       "Support advanced economic research in the Syrian Civil War by collecting, cleaning, and analyzing large datasets to uncover insights on the conflict's impact on civilians. I am currently training a BERT model to classify Arabic text data on how civilians have died in the conflict.",
     icon: React.createElement(FaChartLine),
     date: "January 2024 - present",
+  },
+  {
+    title: "Software Engineer",
+    employer: "Harvard Tech for Social Good",
+    location: "Cambridge, MA",
+    description:
+      "Contribute to developing innovative solutions that address critical societal issues through technology. Leverage technologies such as Next.js/React and Node.js to build projects that improve financial literacy and facilitate impactful charitable giving.",
+    icon: React.createElement(FaLaptopCode),
+    date: "February 2024 - present",
   },
   {
     title: "Course Assistant for CS50",

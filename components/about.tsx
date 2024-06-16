@@ -23,7 +23,7 @@ export default function About() {
         <p className="mb-3">  In addition to my coursework, I work part-time as a research assistant for PhD candidate Emily Silcock, where I am involved in training a large language model to classify texts related to the Syrian Civil War. I am also very passionate about education. This upcoming semester will mark my second year as a course assistant for CS50, Harvard’s introductory computer science course, where I support students in mastering foundational programming concepts. </p>
          
         <p>
-          This summer I will be continuing my work with CS50 as a Summer Fellow, where I will be helping to develop the course’s curriculum and work on various software development projects. Outside of academics, I sing Tenor 2 with the Harvard Glee Club (watch our latest concert <a href="https://www.youtube.com/live/FYX1sGmoS44?si=d9iia-OWS6RQMD9N&t=4163" target="_blank" style={{ textDecoration: 'underline' }}>here</a>!), am a member of the Cuban-American Undergraduate Student Association, and enjoy traveling the world. 
+          This summer I am continuing my work with CS50 as a Summer Fellow in their Research & Development Team, where I am designing artificial intelligence educational tools to be used in future iterations of the course. Outside of academics, I sing Tenor 2 with the Harvard Glee Club (watch our latest concert <a href="https://www.youtube.com/live/FYX1sGmoS44?si=d9iia-OWS6RQMD9N&t=4163" target="_blank" style={{ textDecoration: 'underline' }}>here</a>!), am a member of the Cuban-American Undergraduate Student Association, and enjoy traveling the world. 
         </p>
     </motion.section>
   )
