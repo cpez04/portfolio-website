@@ -4,6 +4,8 @@ import React from 'react'
 import SectionHeading from './section-heading'
 import { motion } from 'framer-motion'
 import { useSectionInView } from '@/lib/hooks';
+import Fireworks from "react-canvas-confetti/dist/presets/fireworks";
+
 
 export default function About() {
 
@@ -17,6 +19,9 @@ export default function About() {
         id="about"
     >
         <SectionHeading>About Me</SectionHeading>
+
+        <Fireworks autorun={{ speed: 1, duration: 20000 }} />
+        
         <p className="mb-3 "> 
           I am a rising junior at Harvard College majoring in statistics and computer science. My coursework has provided me with a strong foundation in machine learning, data structures, algorithms, probability, and statistical inference. This academic background is complemented by my involvement in tech-driven extracurriculars such as Harvard Tech for Social Good (T4SG), where I engage in impactful projects aimed at societal benefit. </p>
           

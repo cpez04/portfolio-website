@@ -1,3 +1,4 @@
+
 import Header from '@/components/header'
 import './globals.css'
 import { Inter } from 'next/font/google'
@@ -28,6 +29,7 @@ export default function RootLayout({
 
         <div className="bg-[#b3e0ff] dark:bg-[#1e3a8a] absolute top-[-1rem] -z-10 left-[35rem] h-[31.25rem] w-[50rem] rounded-full blur-[10rem] sm:w-[68.75rem] md:left-[-33rem] lg:left-[-28rem] xl:left-[-15rem] 2xl:left-[-5rem]"> </div>
 
+
         <ThemeContextProvider>
           <ActiveSectionContextProvider> 
             <Header />
@@ -35,7 +37,7 @@ export default function RootLayout({
             <Analytics />
             <Footer/>
             <Toaster position="top-right"/>
-          </ActiveSectionContextProvider>  
+          </ActiveSectionContextProvider>
          <ThemeSwitch />
         </ThemeContextProvider>
         
