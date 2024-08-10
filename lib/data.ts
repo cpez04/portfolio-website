@@ -29,29 +29,29 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "CS50 Summer Fellow",
-    employer: "Harvard John A. Paulson School of Engineering and Applied Sciences",
-    location: "Cambridge, MA",
-    description:
-      "Design and implement new AI features for the CS50 course to aid student learning and update curriculum materials.",
-    icon: React.createElement(FaLightbulb),
-    date: "June 2024 - present",
-  },
-  {
-    title: "Computational Research Assistant",
+    title: "ML Research Assistant",
     employer: "Harvard University Department of Economics",
     location: "Cambridge, MA",
     description:
-      "Support advanced economic research in the Syrian Civil War by collecting, cleaning, and analyzing large datasets to uncover insights on the conflict's impact on civilians. I am currently training a BERT model to classify Arabic text data on how civilians have died in the conflict.",
+      "Support economic research in the Syrian Civil War by collecting, cleaning, and analyzing large datasets. Trained RoBERTa models to classify Arabic text data, indentifying how civilians were affected by the conflict.",
     icon: React.createElement(FaChartLine),
     date: "January 2024 - present",
+  },
+  {
+    title: "Software Engineering Fellow (CS50)",
+    employer: "Harvard John A. Paulson School of Engineering and Applied Sciences",
+    location: "Cambridge, MA",
+    description:
+      "Designed and implemented new AI features for the CS50 course to enhance student learning. Revamped the CS50.ai website, improving user experience and aligning it with pedagogical teaching goals.",
+    icon: React.createElement(FaLightbulb),
+    date: "June - August 2024",
   },
   {
     title: "Software Engineer",
     employer: "Harvard Tech for Social Good",
     location: "Cambridge, MA",
     description:
-      "Contribute to developing innovative solutions that address critical societal issues through technology. Leverage technologies such as Next.js/React and Node.js to build projects that improve financial literacy and facilitate impactful charitable giving.",
+      "Develop tech solutions addressing societal challenges. Utilize technologies such as Next.js/React and Node.js to build projects such as enhancing financial literacy and facilitating impactful charitable giving.",
     icon: React.createElement(FaLaptopCode),
     date: "February 2024 - present",
   },
@@ -60,7 +60,7 @@ export const experiencesData = [
     employer: "Harvard John A. Paulson School of Engineering and Applied Sciences",
     location: "Cambridge, MA",
     description:
-      "Conducted weekly office hours, graded assignments, and assisted students in understanding course material. Earned an overall Excellent rating by students in the end-of-semester course evaluations.",
+      "Conducted weekly office hours, graded assignments, and assisted students in understanding course material. Recognized with an Excellent rating in end-of-semester evaluations by students.",
     icon: React.createElement(FaChalkboardTeacher),
     date: "August - December 2023",
   },
@@ -69,13 +69,27 @@ export const experiencesData = [
     employer: "Instituto Milenio Fundamentos de los Datos",
     location: "Santiago, Chile",
     description:
-      "Collaborated with a team of professors and graduate students on an agent-based modeling project aimed at uncovering patterns related to narcotraffic and organized crime within Chile. Developed a Python script capable of processing extensive CSV files containing crime data and visualizing the results with a dynamic geographic heat map.",
+      "Collaborated with professors and graduate students on an agent-based modeling project related to narcotraffic and organized crime in Chile. Developed Python scripts to process and visualize extensive crime data with dynamic geographic heat maps.",
     icon: React.createElement(FaDatabase),
     date: "June - July 2023",
   },
 ] as const;
 
 export const projectsData = [
+  {
+    title: "alpha.cs50.ai",
+    description:
+      "Revamped the CS50.ai website that hosts the CS50 chatbot that engages with students to assist with course material. ",
+    tags: ["Next.js", "React", "Tailwind", "Prisma", "TypeScript", "Assistants API", "Chat Completions API"],
+    imageUrl: cointribute,
+  },
+  {
+    title: "RoBERTa Multiclass Text Classification",
+    description:
+      "Trained a RoBERTa model to classify Arabic text data on how civilians have died in the Syrian Civil War. ",
+    tags: ["Pytorch", "Wandb", "Chat Completions API"],
+    imageUrl: cointribute,
+  },
   {
     title: "Cointribute",
     description:
@@ -89,13 +103,6 @@ export const projectsData = [
       "A paper that proves the Envelope Theorems and the Karush-Kuhn-Tucker Conditions, providing a lens to analyze their applicability to three fictional business models and to gain further theoretical and geometric mathematical intuition.",
     tags: ["Multivariable Calculus", "Linear Algebra", "Economics"],
     imageUrl: kkt,
-  },
-  {
-    title: "SkySoarer",
-    description:
-      "A web application that allows users to track flights, search for the best flight deals, and find nearby airports, and manage their accounts, using a Flask framework and an SQLite database. It integrates Airlabs, Skyscanner, and Google Maps APIs to fetch flight data and geolocation services.",
-    tags: ["Python", "Flask", "HTML", "CSS", "JavaScript"],
-    imageUrl: skysoarer,
   },
 ] as const;
 
