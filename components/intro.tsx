@@ -33,13 +33,13 @@ export default function Intro() {
                     }}
                 >
                     <Image 
-                    src="/chris.jpeg" 
-                    alt="Sexy photo of Chris" 
+                    src="/chris.JPG" 
+                    alt="Chris" 
                     width="384"
                     height="384"
                     quality={95}
                     priority={true}
-                    className=" w-48 h-48 rounded-full border-[0.35rem] border-white shadow-xl object-cover"
+                    className=" w-48 h-48 rounded-full border-[0.35rem] border-white shadow-xl object-cover object-[50%_55%]"
                     />
                 </motion.div>
             

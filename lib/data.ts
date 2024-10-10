@@ -1,8 +1,9 @@
 import React from "react";
 import { FaLaptopCode, FaChartLine, FaChalkboardTeacher, FaDatabase, FaLightbulb } from "react-icons/fa";
-import skysoarer from "@/public/SkySoarer.png";
 import cointribute from "@/public/cointribute.png";
+import alpha from "@/public/alpha.png";
 import kkt from "@/public/kkt.png";
+import syria from "@/public/syria.png";
 
 export const links = [
   {
@@ -29,13 +30,31 @@ export const links = [
 
 export const experiencesData = [
   {
+    title: "Senior Software Engineer",
+    employer: "Harvard Tech for Social Good",
+    location: "Cambridge, MA",
+    description:
+      "Lead a team of software engineers in developing an AI Resource Navigator for One Degree, a nonprofit aimed at helping low-income families access social and economic resources. Utilize technologies such as Next.js/React, Node.js, and OpenAI APIs, design system architecture, provide mentorship, and conduct code reviews to improve community access to resources.",
+    icon: React.createElement(FaLaptopCode),
+    date: "February 2024 - present",
+  },
+  {
+    title: "Teaching Staff: Stat 110, CS50",
+    employer: "Harvard John A. Paulson School of Engineering and Applied Sciences",
+    location: "Cambridge, MA",
+    description:
+      "Teach weekly sections for Stat 110, focusing on building student intuition in probability through interactive problem-solving. Lead office hours, provide personalized guidance, and grade assignments. Recognized for fostering a supportive learning environment, achieving Excellent ratings in end-of-semester evaluations from students.",
+    icon: React.createElement(FaChalkboardTeacher),
+    date: "August 2023 - present",
+  },
+  {
     title: "ML Research Assistant",
     employer: "Harvard University Department of Economics",
     location: "Cambridge, MA",
     description:
-      "Support economic research in the Syrian Civil War by collecting, cleaning, and analyzing large datasets. Trained RoBERTa models to classify Arabic text data, indentifying how civilians were affected by the conflict.",
+      "Supported economic research on the Syrian Civil War by collecting, cleaning, and analyzing extensive datasets. Developed and fine-tuned RoBERTa models for multiclass classification of Arabic text data, accurately identifying and categorizing the impacts on civilians across multiple dimensions of the conflict.",
     icon: React.createElement(FaChartLine),
-    date: "January 2024 - present",
+    date: "January 2024 - September 2024",
   },
   {
     title: "Software Engineering Fellow (CS50)",
@@ -45,24 +64,6 @@ export const experiencesData = [
       "Designed and implemented new AI features for the CS50 course to enhance student learning. Revamped the CS50.ai website, improving user experience and aligning it with pedagogical teaching goals.",
     icon: React.createElement(FaLightbulb),
     date: "June - August 2024",
-  },
-  {
-    title: "Software Engineer",
-    employer: "Harvard Tech for Social Good",
-    location: "Cambridge, MA",
-    description:
-      "Develop tech solutions addressing societal challenges. Utilize technologies such as Next.js/React and Node.js to build projects such as enhancing financial literacy and facilitating impactful charitable giving.",
-    icon: React.createElement(FaLaptopCode),
-    date: "February 2024 - present",
-  },
-  {
-    title: "Course Assistant for CS50",
-    employer: "Harvard John A. Paulson School of Engineering and Applied Sciences",
-    location: "Cambridge, MA",
-    description:
-      "Conducted weekly office hours, graded assignments, and assisted students in understanding course material. Recognized with an Excellent rating in end-of-semester evaluations by students.",
-    icon: React.createElement(FaChalkboardTeacher),
-    date: "August - December 2023",
   },
   {
     title: "Data Science Intern",
@@ -81,14 +82,14 @@ export const projectsData = [
     description:
       "Revamped the CS50.ai website that hosts the CS50 chatbot that engages with students to assist with course material. ",
     tags: ["Next.js", "React", "Tailwind", "Prisma", "TypeScript", "Assistants API", "Chat Completions API"],
-    imageUrl: cointribute,
+    imageUrl: alpha,
   },
   {
     title: "RoBERTa Multiclass Text Classification",
     description:
       "Trained a RoBERTa model to classify Arabic text data on how civilians have died in the Syrian Civil War. ",
     tags: ["Pytorch", "Wandb", "Chat Completions API"],
-    imageUrl: cointribute,
+    imageUrl: syria,
   },
   {
     title: "Cointribute",
