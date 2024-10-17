@@ -4,8 +4,6 @@ import React from 'react'
 import SectionHeading from './section-heading'
 import { motion } from 'framer-motion'
 import { useSectionInView } from '@/lib/hooks';
-import Fireworks from "react-canvas-confetti/dist/presets/fireworks";
-
 
 export default function About() {
 
@@ -19,17 +17,19 @@ export default function About() {
         id="about"
     >
         <SectionHeading>About Me</SectionHeading>
-
-       {/* <Fireworks autorun={{ speed: 1, duration: 20000 }} /> */}
         
-        <p className="mb-3 "> 
-          I am a rising junior at Harvard College majoring in statistics and computer science. My coursework has provided me with a strong foundation in machine learning, data structures, algorithms, probability, and statistical inference. This academic background is complemented by my involvement in tech-driven extracurriculars such as Harvard Tech for Social Good (T4SG), where I engage in impactful projects aimed at societal benefit. </p>
-          
-        <p className="mb-3"> I also work part-time as a research assistant in the Harvard Economics department, where I am involved in training large language models to classify texts related to the Syrian Civil War. I am also very passionate about education. This upcoming semester will mark my second year as a course assistant for CS50, Harvard’s introductory computer science course, where I support students in mastering foundational programming concepts. </p>
-         
-        <p>
-          This summer I am working with CS50's Research and Development Team as a Software Engineer Fellow, where I am designing new AI educational tools to be used in future iterations of the course. Outside of academics, I sing Tenor 2 with the Harvard Glee Club (watch our latest concert <a href="https://www.youtube.com/live/FYX1sGmoS44?si=d9iia-OWS6RQMD9N&t=4163" target="_blank" style={{ textDecoration: 'underline' }}>here</a>!), am a member of the Cuban-American Undergraduate Student Association, and enjoy traveling the world. 
+        <p className="mb-3"> 
+          I am a junior at Harvard College majoring in Statistics and Computer Science. My coursework has given me a solid foundation in machine learning, data structures, algorithms, probability, and statistical inference. This academic background is complemented by my involvement in tech-driven extracurriculars such as Harvard Tech for Social Good (T4SG), where I lead a team of software engineers to create innovative projects that benefit society.
         </p>
+
+        <p className="mb-3">
+          I also work part-time as a research assistant in the Harvard Economics department, training large language models to classify texts related to the Syrian Civil War. In addition, I am passionate about education—this semester, I’m serving as a Teaching Fellow for Stat 110, Harvard's introductory probability course, and working my second year as a Course Assistant for CS50, Harvard’s introductory computer science course, helping students master foundational programming concepts.
+        </p>
+
+        <p>
+          This past summer, I worked with CS50's Research and Development Team as a Software Engineer Fellow, where I designed new AI educational tools for future iterations of the course. Outside of academics, I sing Tenor 2 with the Harvard Glee Club (watch our last concert <a href="https://www.youtube.com/live/FYX1sGmoS44?si=d9iia-OWS6RQMD9N&t=4163" target="_blank" style={{ textDecoration: 'underline' }}>here</a>!), am a member of the Cuban-American Undergraduate Student Association, and enjoy photographing and traveling the world.
+        </p>
+
     </motion.section>
   )
 }

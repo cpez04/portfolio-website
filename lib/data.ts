@@ -5,6 +5,13 @@ import alpha from "@/public/alpha.png";
 import kkt from "@/public/kkt.png";
 import syria from "@/public/syria.png";
 
+export const photosData = [
+  {
+    src: "",
+    alt: "",
+  },
+] as const;
+
 export const links = [
   {
     name: "Home",
