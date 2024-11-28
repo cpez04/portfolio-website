@@ -1,12 +1,12 @@
 "use client";
 
-import Image from 'next/image';
-import React, { useState, useEffect } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
-import { BsLinkedin } from 'react-icons/bs';
-import { FaGithubSquare } from 'react-icons/fa';
-import { useSectionInView } from '@/lib/hooks';
-import { greetings } from '@/lib/data';
+import Image from "next/image";
+import React, { useState, useEffect } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+import { BsLinkedin } from "react-icons/bs";
+import { FaGithubSquare } from "react-icons/fa";
+import { useSectionInView } from "@/lib/hooks";
+import { greetings } from "@/lib/data";
 
 export default function Intro() {
   const { ref } = useSectionInView("Home", 0.5);
@@ -20,8 +20,12 @@ export default function Intro() {
   }, []);
 
   return (
-    <section ref={ref} id="home" className="mb-28 max-w-[50rem] text-center sm:mb-0 scroll-mt-[100rem]">
-      <div className='flex items-center justify-center'>
+    <section
+      ref={ref}
+      id="home"
+      className="mb-28 max-w-[50rem] text-center sm:mb-0 scroll-mt-[100rem]"
+    >
+      <div className="flex items-center justify-center">
         <div className="relative">
           <motion.div
             initial={{ opacity: 0, scale: 0 }}
@@ -64,12 +68,19 @@ export default function Intro() {
               {greetings[greetingIndex]}
             </motion.span>
           </AnimatePresence>
-          <span className="inline-block">, I'm <strong>Chris</strong>.</span>
+          <span className="inline-block">
+            , I'm <strong>Chris</strong>.
+          </span>
         </div>
         <div className="mt-4 text-xl text-gray-700 dark:text-gray-300">
-          I'm currently a student at <strong>Harvard College</strong>, majoring in <strong>Statistics</strong> and <strong>Computer Science</strong>. My passion lies in using <strong>machine learning</strong>, <strong>software engineering</strong>, and <strong>data science</strong> to make a positive social impact. I thrive on building innovative solutions that can help address real-world challenges.
+          I'm currently a student at <strong>Harvard College</strong>, majoring
+          in <strong>Statistics</strong> and <strong>Computer Science</strong>.
+          My passion lies in using <strong>machine learning</strong>,{" "}
+          <strong>software engineering</strong>, and{" "}
+          <strong>data science</strong> to make a positive social impact. I
+          thrive on building innovative solutions that can help address
+          real-world challenges.
         </div>
-
       </motion.div>
 
       <motion.div
@@ -77,7 +88,7 @@ export default function Intro() {
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.1 }}
-        style={{ flexWrap: 'nowrap' }}
+        style={{ flexWrap: "nowrap" }}
       >
         <a
           className="bg-white p-4 hover:text-blue-600 text-gray-700 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition-all duration-300 cursor-pointer border border-gray-200 shadow-lg dark:bg-white/10 dark:text-white/60 dark:border-blue-400"

@@ -1,9 +1,16 @@
 import React from "react";
-import { FaLaptopCode, FaChartLine, FaChalkboardTeacher, FaDatabase, FaLightbulb } from "react-icons/fa";
+import {
+  FaLaptopCode,
+  FaChartLine,
+  FaChalkboardTeacher,
+  FaDatabase,
+  FaLightbulb,
+} from "react-icons/fa";
 import cointribute from "@/public/cointribute.png";
 import alpha from "@/public/alpha.png";
 import kkt from "@/public/kkt.png";
 import syria from "@/public/syria.png";
+import lights from "@/public/lights_data_action-1080p.png";
 
 export const photosData = [
   {
@@ -47,7 +54,8 @@ export const experiencesData = [
   },
   {
     title: "Teaching Staff: Stat 110, CS50",
-    employer: "Harvard John A. Paulson School of Engineering and Applied Sciences",
+    employer:
+      "Harvard John A. Paulson School of Engineering and Applied Sciences",
     location: "Cambridge, MA",
     description:
       "Teach weekly sections for Stat 110, focusing on building student intuition in probability through interactive problem-solving. Lead office hours, provide personalized guidance, and grade assignments. Recognized for fostering a supportive learning environment, achieving Excellent ratings in end-of-semester evaluations from students.",
@@ -65,7 +73,8 @@ export const experiencesData = [
   },
   {
     title: "Software Engineering Fellow (CS50)",
-    employer: "Harvard John A. Paulson School of Engineering and Applied Sciences",
+    employer:
+      "Harvard John A. Paulson School of Engineering and Applied Sciences",
     location: "Cambridge, MA",
     description:
       "Designed and implemented new AI features for the CS50 course to enhance student learning. Revamped the CS50.ai website, improving user experience and aligning it with pedagogical teaching goals.",
@@ -85,10 +94,25 @@ export const experiencesData = [
 
 export const projectsData = [
   {
+    title: "Intro to Data Science & ML in Python Seminar",
+    description:
+      'Taught a 45-minute seminar on data science and machine learning, covering the data science workflow, types of machine learning and popular models, and led a hands-on activity analyzing Spotify\'s most streamed songs. <a href="https://youtu.be/nNfGWwlxCyE?si=wWaDjk8IFV09zIOO" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline dark:text-blue-400">Watch here</a>.',
+    tags: ["Pandas", "Numpy", "Matplotlib", "Scikit-learn", "Jupyter"],
+    imageUrl: lights,
+  },
+  {
     title: "alpha.cs50.ai",
     description:
       "Revamped the CS50.ai website that hosts the CS50 chatbot that engages with students to assist with course material. ",
-    tags: ["Next.js", "React", "Tailwind", "Prisma", "TypeScript", "Assistants API", "Chat Completions API"],
+    tags: [
+      "Next.js",
+      "React",
+      "Tailwind",
+      "Prisma",
+      "TypeScript",
+      "Assistants API",
+      "Chat Completions API",
+    ],
     imageUrl: alpha,
   },
   {
@@ -115,57 +139,57 @@ export const projectsData = [
 ] as const;
 
 export const greetings = [
-  "Hello",       // English
-  "Hola",        // Spanish
-  "Bonjour",     // French
-  "Hallo",       // German
-  "Ciao",        // Italian
-  "こんにちは",    // Japanese (Konnichiwa)
-  "안녕하세요",     // Korean (Annyeonghaseyo)
-  "你好",         // Chinese (Nǐ hǎo)
-  "Привет",      // Russian (Privet)
-  "مرحبا",       // Arabic (Marhaban)
-  "Hej",         // Swedish
-  "Hei",         // Norwegian
-  "Hallo",       // Dutch
-  "Ahoj",        // Czech
-  "Olá",         // Portuguese
-  "Selam",       // Turkish
-  "Szia",        // Hungarian
-  "สวัสดี",      // Thai (Sawasdee)
-  "Hallo",       // Afrikaans
-  "Kamusta",     // Filipino
-  "שלום",        // Hebrew (Shalom)
-  "नमस्ते",       // Hindi (Namaste)
-  "வணக்கம்",     // Tamil (Vanakkam)
-  "Γεια σας",    // Greek (Yia sas)
-  "Բարեւ",       // Armenian (Barev)
-  "გამარჯობა",   // Georgian (Gamarjoba)
-  "Salve",       // Latin
-  "Здраво",      // Serbian (Zdravo)
-  "สวัสดีครับ",   // Thai (Sawasdee krub)
-  "Здравей",     // Bulgarian (Zdravei)
-  "नमस्कार",      // Marathi (Namaskar)
-  "हॅलो",         // Marathi (Hello)
-  "ಹಲೋ",         // Kannada (Halo)
-  "હેલો",         // Gujarati (Hello)
-  "안녕",          // Korean (Annyeong)
-  "Cześć",       // Polish
-  "سلام",        // Persian (Salam)
-  "Merhaba",     // Turkish
-  "Sveiki",      // Latvian
-  "Tere",        // Estonian
-  "Xin chào",    // Vietnamese
-  "Hallo",       // Indonesian
-  "Bula",        // Fijian
-  "Aloha",       // Hawaiian
-  "Sawubona",    // Zulu
-  "Molo",        // Xhosa
-  "Salam",       // Azerbaijani
-  "Kaixo",       // Basque
-  "नमस्ते",       // Nepali (Namaste)
-  "Dia duit",    // Irish (Gaelic)
-  "Dobrý den",   // Czech
-  "สวัสดีค่ะ",     // Thai (Sawasdee ka)
-  "سلام",        // Urdu (Salam)
+  "Hello", // English
+  "Hola", // Spanish
+  "Bonjour", // French
+  "Hallo", // German
+  "Ciao", // Italian
+  "こんにちは", // Japanese (Konnichiwa)
+  "안녕하세요", // Korean (Annyeonghaseyo)
+  "你好", // Chinese (Nǐ hǎo)
+  "Привет", // Russian (Privet)
+  "مرحبا", // Arabic (Marhaban)
+  "Hej", // Swedish
+  "Hei", // Norwegian
+  "Hallo", // Dutch
+  "Ahoj", // Czech
+  "Olá", // Portuguese
+  "Selam", // Turkish
+  "Szia", // Hungarian
+  "สวัสดี", // Thai (Sawasdee)
+  "Hallo", // Afrikaans
+  "Kamusta", // Filipino
+  "שלום", // Hebrew (Shalom)
+  "नमस्ते", // Hindi (Namaste)
+  "வணக்கம்", // Tamil (Vanakkam)
+  "Γεια σας", // Greek (Yia sas)
+  "Բարեւ", // Armenian (Barev)
+  "გამარჯობა", // Georgian (Gamarjoba)
+  "Salve", // Latin
+  "Здраво", // Serbian (Zdravo)
+  "สวัสดีครับ", // Thai (Sawasdee krub)
+  "Здравей", // Bulgarian (Zdravei)
+  "नमस्कार", // Marathi (Namaskar)
+  "हॅलो", // Marathi (Hello)
+  "ಹಲೋ", // Kannada (Halo)
+  "હેલો", // Gujarati (Hello)
+  "안녕", // Korean (Annyeong)
+  "Cześć", // Polish
+  "سلام", // Persian (Salam)
+  "Merhaba", // Turkish
+  "Sveiki", // Latvian
+  "Tere", // Estonian
+  "Xin chào", // Vietnamese
+  "Hallo", // Indonesian
+  "Bula", // Fijian
+  "Aloha", // Hawaiian
+  "Sawubona", // Zulu
+  "Molo", // Xhosa
+  "Salam", // Azerbaijani
+  "Kaixo", // Basque
+  "नमस्ते", // Nepali (Namaste)
+  "Dia duit", // Irish (Gaelic)
+  "Dobrý den", // Czech
+  "สวัสดีค่ะ", // Thai (Sawasdee ka)
+  "سلام", // Urdu (Salam)
 ] as const;
